@@ -1,21 +1,65 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+header {
+  background-color: #0c3c60;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.organization-name {
+  margin: 0 auto;
 }
 
 main {
-  margin: auto;
-  width: 50%;
   padding: 20px;
+  flex-grow: 1;
 }
 
-main > h1 {
+.container {
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  font-size: 3.5em;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #0c3c60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold; /* Added */
+}
+
+.button:hover {
+  background-color: #004563;
+}
+
+footer {
+  background-color: #0c3c60;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
